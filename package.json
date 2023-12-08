@@ -1,0 +1,21 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": " node-sass --watch scss/main.scss --output css/ --recursive",
+    "tailwind": "npx tailwindcss -i ./tailwind/tailwind.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "sass": "^1.63.6",
+    "scss": "^0.2.4",
+    "swiper": "^10.0.4"
+  }
+}

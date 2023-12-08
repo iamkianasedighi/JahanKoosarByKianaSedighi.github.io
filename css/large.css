@@ -1,0 +1,10 @@
+span.fa-bars{
+    display: none;
+}
+.changeInSmall{
+    display: none;
+}
+.changeInLarge{
+    display: flex;
+    color: #a98f7697;
+}

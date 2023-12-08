@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جهان کوثر</title>
+    <meta name="description" content="جهان کوثر" />
+    <meta name="keywords" content="جهان کوثر" />
+    <link rel="shortcut icon" href="./pict/header.ico" type="image/png" />
+    <link rel="canonical" href="http://jkowsar.com/" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./icons/css/all.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/size.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./tailwind/tailwind.css">
+  </head>
+  <body>
+    <!--start header-->
+    <div class="w-full h-[80px] bg-[#fefefc] z-10 flex flex-row sticky top-0">
+      <div class="changeInLarge">
+        <img class="h-[80px]" src="./pict/Logojkowsar.png" alt="logo" />
+        <div class="flex flex-row my-auto">
+          <a href="./index.html" class="px-4 break-keep w-[120px]">صفحه اصلی</a>
+          <a href="./project.html" class="border-r-2 border-neutral-400 px-4"
+            >پروژه</a
+          >
+          <!--about us part drop down start-->
+          <a href="#">
+            <button
+              id="dropdownDefault"
+              data-dropdown-toggle="dropdown"
+              class="inline-flex items-center text-center text-sm font-medium border-r-2 border-neutral-400 px-4"
+              type="button"
+            >
+              درباره ما<svg
+                class="ml-2 h-4 w-4"
+                aria-hidden="true"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg></button
+          ></a>
+          <!-- Dropdown menu -->
+          <div
+            id="dropdown"
+            class="z-10 w-44 divide-y hidden divide-gray-100 rounded bg-white shadow dark:bg-gray-700"
+            data-popper-reference-hidden=""
+            data-popper-escaped=""
+            data-popper-placement="bottom"
+            style="
+              position: absolute;
+              inset: 0px auto auto 0px;
+              margin: 0px;
+              transform: translate3d(327px, 70px, 0px);
+            "
+          >
+            <ul
+              class="py-1 text-sm text-gray-700 dark:text-gray-200"
+              aria-labelledby="dropdownDefault"
+            >
+              <li>
+                <a
+                  href="./about.html"
+                  class="block py-2 px-4 hover:bg-gray-500 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >معرفی شرکت</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./manager.html"
+                  class="block py-2 px-4 hover:bg-gray-500 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >مدیران</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./certificate.html"
+                  class="block py-2 px-4 hover:bg-gray-500 dark:hover:bg-gray-600 dark:hover:text-white"
+                  >گواهینامه و تقدیر نامه</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- end drop down  -->
+          <a
+            href="./reach.html"
+            class="border-r-2 border-neutral-400 px-4 w-[110px]"
+            >تماس با ما</a
+          >
+        </div>
+      </div>
+      <div class="w-full changeInSmall">
+        <span class="fa-solid fa-bars"></span>
+        <div class="subMenu">
+          <div class="subMenuLeft">
+            <a href="./index.html" class="px-4">صفحه اصلی</a>
+            <a href="./project.html" class="px-4">پروژه</a>
+            <a href="./about.html">معرفی شرکت</a>
+            <a href="./manager.html" class="px-4">مدیران</a>
+            <a href="./certificate.html" class="px-4">گواهینامه و تقدیر نامه</a>
+            <a href="./reach.html" class="px-4">تماس با ما</a>
+          </div>
+        </div>
+        <img class="h-[80px]" src="./pict/Logojkowsar.png" alt="logo" />
+      </div>
+    </div>
+    <hr />
+    <!--end header-->
+    <!--start slider-->
+    <div class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./pict/karkhe/3.png" alt="slider1" />
+            <div class="content"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./pict/marvak/1.jpg" alt="slider2" />
+            <div class="content"></div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./pict/ilam/1.jpg" alt="slider3" />
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--end slider-->
+    <!--start faaliat-->
+    <div class="w-full flex flex-col">
+      <h2 class="font-bold text-3xl mx-auto my-8">زمینه فعالیت شرکت</h2>
+      <hr class="w-[200px] bg-cyan-700" />
+      <div class="flex flex-row flex-wrap justify-evenly">
+        <div class="flex flex-col">
+          <a href="#"
+            ><img
+              src="./pict/logo building.jpg"
+              alt="building"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="#" class="hover:text-xl m-auto">راه و ساختمان</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="./mainSubway.html"
+            ><img
+              src="./pict/logo metro.png"
+              alt="subway"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="./mainSubway.html" class="hover:text-xl m-auto"
+            >ایستگاه مترو</a
+          >
+        </div>
+        <div class="flex flex-col">
+          <a href="./mainTunnels.html"
+            ><img
+              src="./pict/logo tunnel.png"
+              alt="tunnel"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="./mainTunnels.html" class="hover:text-xl m-auto"
+            >اجرای تونل</a
+          >
+        </div>
+        <div class="flex flex-col">
+          <a href="mainDams.html"
+            ><img
+              src="./pict/logodam.jpg"
+              alt="dam"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="mainDams.html" class="hover:text-xl m-auto">سد سازی</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="#"
+            ><img
+              src="./pict/way logo.jpg"
+              alt="dam"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="#" class="hover:text-xl m-auto">راه سازی</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="#"
+            ><img
+              src="./pict/logo water'.jpg"
+              alt="dam"
+              class="forlogo w-[100px] h-[100px] hover:opacity-70"
+          /></a>
+          <a href="#" class="hover:text-xl m-auto">سازه های آبی</a>
+        </div>
+      </div>
+    </div>
+    <!--end faaliat-->
+    <!--start parallax-->
+    <div
+      class="w-[100%] h-auto bg-[url('/pict/about/3.png')] bg-no-repeat bg-center bg-fixed bg-cover"
+    >
+      <!--  start about  -->
+      <div class="flex flex-row flex-wrap relative justify-evenly py-[100px]">
+        <div class="flex flex-col w-[120px] md:w-[300px] relative">
+          <img
+            src="pict/about/hand shaking 2.jpg"
+            alt="manager"
+            class=" w-[120px] md:w-[300px] rounded-lg"
+          />
+          <div
+            class="flex flex-col bg-zinc-500 bg-opacity-80 h-auto  w-[120px] md:w-[300px] popUpContainer transotion-[300ms] absolute bottom-0 rounded-b-lg"
+          >
+            <h3 class="text-sm md:text-2xl text-white">مدیران</h3>
+            <ul class="text-white text-xs md:text-lg hidden popUpWhenHover">
+              <li>خدا کریم پور جعفر</li>
+              <li>همایون شفیعی</li>
+              <li>مجید میرمال</li>
+            </ul>
+            <a
+              href="./manager.html"
+              class="flex flex-row hover:underline text-white text-xs sm:text-lg"
+            >
+              <svg
+                class="w-6 fill-white rotate-180 px-1"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="11.503268 4 10.5620915 4.9627907 13.427451 7.83023256 0 7.83023256 0 9.16976744 13.427451 9.16976744 10.5620915 12.0372093 11.503268 13 16 8.5"
+                ></polygon></svg
+              >بیشتر</a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col  w-[120px] md:w-[300px] relative">
+          <img
+            src="pict/about/1.jpg"
+            alt="manager"
+            class=" w-[120px] md:w-[300px] rounded-lg"
+          />
+          <div
+            class="flex flex-col bg-zinc-500 bg-opacity-80 h-auto  w-[120px] md:w-[300px] popUpFatherP transotion-[300ms] absolute bottom-0 rounded-b-lg"
+          >
+            <h3 class=" text-sm md:text-2xl text-white">آشنایی با شرکت</h3>
+            <p class="text-white hidden text-xs md:text-lg popUpChildP">
+              شرکت جهان کوثر یکی از بزرگترین شرکتهای پیمانکار ساختمانی متخصص در
+              زمینه احداث سد، تونل و استادیوم های ورزشی، کشتارگاه های صنعتی و
+              شبکه های انتقال آب در کشور می باشد.
+            </p>
+            <a
+              href="./about.html"
+              class="flex flex-row hover:underline text-whitetext-xs sm:text-lg text-white"
+            >
+              <svg
+                class="w-6 fill-white rotate-180 px-1"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="11.503268 4 10.5620915 4.9627907 13.427451 7.83023256 0 7.83023256 0 9.16976744 13.427451 9.16976744 10.5620915 12.0372093 11.503268 13 16 8.5"
+                ></polygon></svg
+              >بیشتر</a
+            >
+          </div>
+        </div>
+
+        <div class="flex flex-col w-[120px] md:w-[300px] relative">
+          <img
+            src="pict/about/map.jpg"
+            alt="manager"
+            class=" w-[120px] md:w-[300px] rounded-lg"
+          />
+          <div
+            class="flex flex-col bg-zinc-500 bg-opacity-80 h-auto  w-[120px] md:w-[300px] popUpFatherPA transotion-[300ms] absolute bottom-0 rounded-b-lg"
+          >
+            <h3 class="md:text-2xl text-sm text-white">نشانی</h3>
+            <p class="text-white hidden text-xs md:text-lg popUpChildPA ">
+              تهران – میدان جهاد ( فاطمی ) ابتدای بزرگراه شهید گمنام – خیابان
+              شهید مصطفی جهانمهر – نبش بوعلی سینا غربی- شماره 7
+            </p>
+            <a
+              href="./reach.html"
+              class="flex flex-row hover:underline text-white text-xs sm:text-lg"
+            >
+              <svg
+                class="w-6 fill-white rotate-180 px-1"
+                aria-hidden="true"
+                viewBox="0 0 16 16"
+              >
+                <polygon
+                  points="11.503268 4 10.5620915 4.9627907 13.427451 7.83023256 0 7.83023256 0 9.16976744 13.427451 9.16976744 10.5620915 12.0372093 11.503268 13 16 8.5"
+                ></polygon></svg
+              >بیشتر</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- end about  -->
+    </div>
+    <div class="w-full h-auto bg-white">
+      <!-- start rate  -->
+      <div class="flex flex-nowrap flex-col justify-center w-full">
+        <div class="flex justify-center">
+          <h2 class="font-bold text-3xl my-8">رتبه بندی ها</h2>
+        </div>
+        <div class="flex flex-row flex-wrap justify-evenly">
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">1</p>
+            </div>
+            <h2 class="m-auto  text-sm md:text-xl  p-2">ساختمان وابنیه</h2>
+          </div>
+
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">1</p>
+            </div>
+            <h2 class="m-auto text-sm md:text-xl p-2">راه و ترابری</h2>
+          </div>
+
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">2</p>
+            </div>
+            <h2 class="m-auto text-sm md:text-xl p-2">تاسیسات و تجهیزات</h2>
+          </div>
+
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">5</p>
+            </div>
+            <h2 class="m-auto  text-sm md:text-xl p-2">کشاورزی</h2>
+          </div>
+
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">1</p>
+            </div>
+            <h2 class="m-auto text-sm md:text-xl p-2">آب</h2>
+          </div>
+
+          <div class="flex flex-col flex-nowrap justify-center">
+            <div
+              class="sm:h-[150px] sm:w-[150px] w-[70px] h-[70px] bg-[#F5F5F5] rounded-full hover:rounded-sm transition-[300ms] flex justify-center"
+            >
+              <p class="text-4xl my-auto">5</p>
+            </div>
+            <h2 class="m-auto text-sm md:text-xl p-2">نفت و گاز</h2>
+          </div>
+        </div>
+      </div>
+      <!-- end rate  -->
+    </div>
+    <div
+      class="w-[100%] h-[80vh] bg-[url('/pict/lack.jpg')] bg-no-repeat bg-center bg-fixed bg-cover flex flex-col justify-center"
+    >
+      <video
+        src="./videos/kahir.mp4"
+        controls
+        class="md:w-[50%] w-[70%] mx-auto mb-5"
+        poster="pict/have.jpg"
+        loop
+      ></video>
+      <div
+        id="tearLess"
+        class="rounded-lg hover:bg-[#1b94e0a2] w-[100px] hover:text-white h-[35px] p-2 px-5 border-white border border-solid flex justify-center mx-auto"
+      >
+        <a href="kahirDam.html"> بیشتر</a>
+      </div>
+    </div>
+    <div class="w-full h-auto bg-white flex flex-col justify-center mb-8">
+      <div class="items-center mx-auto">
+        <h2 class="font-bold text-3xl my-8">مشتریان ما</h2>
+      </div>
+      <div class="flex flex-row flex-wrap justify-evenly">
+        <div>
+          <img
+            src="./pict/customer/1.png"
+            alt=""
+            class="w-[200px] bg-gray-300 rounded-md m-3"
+          />
+        </div>
+        <div>
+          <img
+            src="./pict/customer/2.png"
+            alt=""
+            class="w-[200px] bg-gray-300 rounded-md m-3"
+          />
+        </div>
+        <div>
+          <img
+            src="./pict/customer/3.png"
+            alt=""
+            class="w-[200px] bg-gray-300 rounded-md m-3"
+          />
+        </div>
+        <div>
+          <img
+            src="./pict/customer/4.png"
+            alt=""
+            class="w-[200px] bg-gray-300 rounded-md m-3"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-[100%] h-[60vh] bg-[url('/pict/machine.jpg')] bg-no-repeat bg-center bg-fixed bg-cover"
+    >
+      <div>
+        <ol class="border-l border-neutral-300">
+          <!--item-->
+          <li class="mr-5 md:flex hidden">
+            <div class="mb-6 ml-4 mt-2">
+              <div
+                class="flex-start flex flex-nowrap flex-row items-center pt-3"
+              >
+                <div
+                  class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-yellow-100"
+                ></div>
+                <h4 class="mb-1.5 text-xl font-bold mx-3 ">شرکت جهان کوثر</h4>
+              </div>
+              <p class="mb-3 text-yellow-950">
+                (سهامی خاص) با هدف اجرای تونل های آبیاری و انحراف سد ۱۵ خرداد قم
+                توسط متخصصان داخلی، در سال ۱۳۶۵ به شماره ۶۳۰۱۰ در تهران به ثبت
+                رسید.
+              </p>
+            </div>
+          </li>
+          <!--item-->
+          <li class="mr-5 md:flex hidden">
+            <div class="mb-6 ml-4 mt-2">
+              <div
+                class="flex-start flex flex-nowrap flex-row items-center pt-3"
+              >
+                <div
+                  class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-yellow-100"
+                ></div>
+                <h4 class="mb-1.5 text-xl font-bold mx-3 ">توسعه</h4>
+              </div>
+              <p class="mb-3 text-yellow-950">
+                با هدف حفظ امکانات و توان فنی و اجرایی به وجود آمده، سعی در
+                گسترش فعالیت های هود در زمینه کار های عمرانی نمود.
+              </p>
+            </div>
+          </li>
+          <!--item-->
+          <li class="mr-5">
+            <div class="mb-6 ml-4 mt-2">
+              <div
+                class="flex-start flex flex-nowrap flex-row items-center pt-3"
+              >
+                <div
+                  class="-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-yellow-100"
+                ></div>
+                <h4 class="mb-1.5 text-xl font-bold mx-3">
+                  ماشین آلات و تجهیزات
+                </h4>
+              </div>
+              <p class="mb-3 text-yellow-950 ">
+                شرکت جهان کوثر دارای ۲۸۹ ماشین آلات که برای عملیات های خاکی،
+                بتنی، تونل‌سازی‌، حفاری، تزریق و ... است را داراست‌.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+    
+    <!--end parallax-->
+    <!--start footer-->
+    <div
+      class="w-full h-[50px] bg-zinc-700 flex flex-row flex-nowrap justify-center"
+    >
+      <a href="./index.html" class="px-[2%] my-auto text-white hover:underline"
+        >صفحه اصلی</a
+      >
+      <a
+        href="./project.html"
+        class="px-[2%] my-auto text-white hover:underline"
+        >پروژه</a
+      >
+      <a href="./reach.html" class="px-[2%] my-auto text-white hover:underline"
+        >تماس با ما</a
+      >
+    </div>
+    <div
+      class="w-[40%] mx-auto my-3 h-auto flex flex-col flex-wrap justify-center"
+    >
+      <a href="./index.html"
+        ><p class="my-2">
+          شرکت جهان کوثر یکی از بزرگترین شرکتهای پیمانکار ساختمانی متخصص در
+          زمینه احداث سد، تونل و استادیوم های ورزشی، کشتارگاه های صنعتی و شبکه
+          های انتقال آب در کشور می باشد.
+        </p></a
+      >
+      <p class="text-sm m-auto">
+        © کلیه حقوق مادی و معنوی این سایت متعلق به شرکت جهان کوثر می‌باشد.
+      </p>
+      <p class="text-sm mx-auto">طراح سایت کیانا صدیقی</p>
+    </div>
+    <!--end footer-->
+    <!--start js-->
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      let bars = document.querySelector("span.fa-bars");
+      bars.addEventListener("click", function () {
+        document.querySelector("div.subMenu").classList.toggle("active");
+        this.classList.toggle("fa-regular");
+        this.classList.toggle("fa-xmark");
+      });
+      let dropdownDefault = document.querySelector("button#dropdownDefault");
+      console.log(dropdownDefault);
+      dropdownDefault.addEventListener("click", function (e) {
+        e.target.parentElement.nextElementSibling.classList.toggle("block");
+      });
+      <!-- this part is related to pop up ul -->
+      const popUpWhenHover = document.querySelector(".popUpWhenHover");
+      const popUpContainer = popUpWhenHover.parentNode;
+
+      popUpContainer.addEventListener("mouseover", () => {
+        popUpWhenHover.classList.remove("hidden");
+      });
+
+      popUpContainer.addEventListener("mouseout", () => {
+        popUpWhenHover.classList.add("hidden");
+      });
+      <!-- this part is related to pop up p-->
+      const popUpChildP = document.querySelector(".popUpChildP");
+      const popUpFatherP = popUpChildP.parentNode;
+
+      popUpFatherP.addEventListener("mouseover", () => {
+        popUpChildP.classList.remove("hidden");
+      });
+
+      popUpFatherP.addEventListener("mouseout", () => {
+        popUpChildP.classList.add("hidden");
+      });
+      <!-- this part is related to pop up p adress-->
+      const popUpChildPA = document.querySelector(".popUpChildPA");
+      const popUpFatherPA = popUpChildPA.parentNode;
+
+      popUpFatherPA.addEventListener("mouseover", () => {
+        popUpChildPA.classList.remove("hidden");
+      });
+
+      popUpFatherPA.addEventListener("mouseout", () => {
+        popUpChildPA.classList.add("hidden");
+      });
+    </script>
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <script>
+      const progressCircle = document.querySelector(".autoplay-progress svg");
+      const progressContent = document.querySelector(".autoplay-progress span");
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          autoplayTimeLeft(s, time, progress) {
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+          },
+        },
+      });
+    </script>
+    <!--end js-->
+  </body>
+</html>

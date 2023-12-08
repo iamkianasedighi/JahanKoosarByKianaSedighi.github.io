@@ -1,0 +1,4 @@
+/*size*/
+@import url(./large.css) screen and (min-width: 748px);
+@import url(./small.css) screen and (min-width: 0px) and (max-width: 748px);
+/*size*/

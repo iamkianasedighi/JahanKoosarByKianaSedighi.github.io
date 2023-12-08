@@ -1,0 +1,44 @@
+/*scss*/
+.changeInSmall{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+div.changeInSmall>span{
+margin:auto 0px;
+}
+.changeInLarge{
+    display: none;
+}
+span.fa-bars{
+    display: block;
+}
+div.subMenu{
+  display: none;
+}
+div.subMenuLeft {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 228px;
+  background-color: whitesmoke;
+}
+div.subMenuLeft > a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  line-height: 38px;
+  width: 260px;
+  padding-left: 25px;
+  transform: 300ms;
+}
+div.subMenuLeft > a:hover{
+  background-color: rgba(70, 70, 171, 0.538);
+}
+div.slider{
+  z-index: -1;
+}
+/*scss*/
